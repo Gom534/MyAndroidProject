@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dotted_line_width">1dp</dimen>
+    <dimen name="dotted_line_height">1dp</dimen>
+    <dimen name="text_size">15dp</dimen>
+    <dimen name="COMPLEX_UNIT_DP">15dp</dimen>
+
+</resources>

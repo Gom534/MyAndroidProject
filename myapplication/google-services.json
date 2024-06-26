@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610775212700",
+    "project_id": "valiant-index-425404-t1",
+    "storage_bucket": "valiant-index-425404-t1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610775212700:android:ba8e218630be23d558c359",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzcPrsV8xHfCsxFzx4yQSQS6GM5EKJmNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
