@@ -1,10 +1,15 @@
+import com.android.manifmerger.Actions.load
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
     id("com.google.gms.google-services")
 }
-
+val properties = Properties().apply {
+    load(project.rootProject.file("local.properties").inputStream())
+}
 
 android {
     namespace = "com.example.myapplication"
@@ -17,6 +22,11 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "API_KEY", properties.getProperty("api.key"))
+        val myProperty = properties.getProperty("api.key")
+        if (myProperty != null) {
+            manifestPlaceholders["myProperty"] = myProperty
+        }
     }
 
     buildTypes {
@@ -37,6 +47,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 dependencies {

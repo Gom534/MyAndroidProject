@@ -33,7 +33,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDqGURh2BKv2ktixbJnJxzfeYmZAjvVCRc" />
+            android:value="${myProperty}" />
 
         <activity
             android:name=".Packaging"
